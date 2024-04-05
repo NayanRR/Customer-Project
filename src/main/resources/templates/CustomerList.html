@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Mulish:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <title>Customer List</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#customer-page-btn{
+    margin: 10px;
+    width: 20%;
+    padding: 10px;
+    background-color: #3708f1;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+table{
+    width: 90%;
+    margin: 10px 10px 0px 10px;
+}
+th{
+    background-color: #3708f1;
+    color: #fff;
+}
+th, td{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+td, tr{
+    text-align: center;
+    border-collapse: collapse;
+}
+    </style>
+</head>
+<body>
+<button id="customer-page-btn">Add Customer</button>
+<table >
+    <h1>Customer List</h1>
+    <thead>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody id="customer-list"></tbody>
+</table>
+<script src="/js/customerList.js"></script>
+</body>
+</html>
